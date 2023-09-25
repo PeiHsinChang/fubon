@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="index.css" rel="stylesheet" type="text/css" />
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
   </head>
   <body>
     <header>
@@ -28,7 +41,7 @@
         </div>
       </div>
     </header>
-    <div class="contain">
+    <div class="container-1">
       <div class="btn-wrapper">
         <div class="yellow-btn">
           <img src="/img/Group 1926.svg" />
@@ -45,6 +58,23 @@
           <div class="border"></div>
           完成任務抽<br />Dyson冷暖機
         </div>
+      </div>
+    </div>
+    <div class="yellow-big-btn">
+      <div class="yellow-btn">
+        <img class="yellow-btn-icon" src="/img/Group 1926.svg" />
+        <div class="border"></div>
+        賺點攻略<br />揪友一起賺
+      </div>
+      <div class="yellow-btn">
+        <img class="yellow-btn-icon" src="/img/Group 1928.svg" />
+        <div class="border"></div>
+        下殺商品<br />好禮任你選
+      </div>
+      <div class="yellow-btn">
+        <img class="yellow-btn-icon" src="/img/Group 2023.svg" />
+        <div class="border"></div>
+        完成任務抽<br />Dyson冷暖機
       </div>
     </div>
     <div class="card-wrapper">
@@ -149,20 +179,20 @@
       </div>
       <div class="black-line"></div>
       <div class="title-1">下殺商品 好禮任你選</div>
-      <div>
+      <div class="desc-1">
         多項商品<span class="blue-text">限時下殺</span>
         ，趕緊記下心儀商品的折扣時間，搶得先機拿好禮！
       </div>
       <div class="gift-wrapper">
-        <div class="img-gift">
-          <img class="gift" src="/img/carousel_gift_1-2/carousel_gift_1.png" />
-        </div>
-        <div class="img-gift">
-          <img class="gift" src="/img/carousel_gift_1-3/carousel_gift_1.png" />
-        </div>
-        <div class="img-gift">
-          <img class="gift" src="/img/carousel_gift_1/carousel_gift_1.png" />
-        </div>
+        <!-- <div class="img-gift"> -->
+        <img class="gift" src="/img/carousel_gift_1-2/carousel_gift_1.png" />
+        <!-- </div> -->
+        <!-- <div class="img-gift"> -->
+        <img class="gift" src="/img/carousel_gift_1-3/carousel_gift_1.png" />
+        <!-- </div> -->
+        <!-- <div class="img-gift"> -->
+        <img class="gift" src="/img/carousel_gift_1/carousel_gift_1.png" />
+        <!-- </div> -->
       </div>
       <div class="container-2">
         <div class="live-01"></div>
@@ -182,36 +212,90 @@
         </div>
       </div>
       <div class="container-3">
-        <div class="title-1">
+        <div id="notification-switch" class="title-1">
           注意事項
           <span class="tra"></span>
         </div>
-        <div class="content-3">
-          <div class="black-line"></div>
-          <div class="title-1">現在就加入Fun group放個鹿</div>
-          <div class="content-3-desc">免費下載，超乎你想像的社群互動！</div>
-          <div class="app-icon"></div>
-          <div class="btns-wrapper">
-            <div class="btn-wrapper">
-              <div class="white-button">
-                <img class="icon-app" src="img/ios_03/ios_03.png" />
-                <div class="app-icon-text">
-                  <div class="small-text">Available on the</div>
-                  App Store
-                </div>
+        <div id="notification-text" class="content-3-1">
+          <ol class="notifications">
+            <li class="notification">
+              請於參加「放個鹿防疫新生活」(以下簡稱本活動)前詳閱注意事項。參加者參與本活動時，即表示同意本活動之注意事項，並充分知悉與同意下列事項：
+              <br />(一) 富邦人壽(以下簡稱本公司)得因本活動之需要，依個人資料保護法相關規定，於參加者同意之期間內，以電子檔或紙本形式於我國境內蒐集、處理、利用其個人資料。參加者可自由選擇是否提供完整個人資訊，惟若資訊不完整者，將無法參加本活動。
+              <br />(二) 本公司蒐集參加者個人資料之特定目的如下：為參加者參與本活動之聯繫、得獎公告、後續處理、聯絡、紀錄、客戶諮詢及推廣等行銷目的作為使用用途。
+              <br />(三) 本公司將主動以電子郵件通知活動得獎人，活動得獎人須於2021/10/01-2021/12/31在「Fungroup放個鹿APP」(下稱APP)，自創活動參與人數達百，
+              且活動期間無退出自行創建之活動，即可參加抽Dyson冷暖空氣清淨機乙台(每帳號限抽獎乙次)
+              ，共計抽出1名幸運得獎者。各別任務活動之FunPoints獎勵辦法，則依APP公告為準；APP商城公告之商品數量有限，換完為止，如遇缺貨情形，本公司恕不受理預約或遞補兌換，如有補貨，亦不另行公告。
+              <br />(四) 若活動得獎人因任何因素：如轉贈資格等以致喪失Macbook
+              Pro兌換資格，本公司恕不補發，敬請留意。
+              <br />(五) 本公司將於2022/02/24在「Fungroup放個鹿APP」網頁公告得獎名單，並主動以電子郵件通知活動中獎人，請活動中獎人於指定回覆資料截止日期前，提供真實姓名、身分證字號、地址、電話…等個人資料以完成相關領獎作業〈填妥領獎收據及附上得獎人身分證正反面影本寄回本公司〉，逾期回覆或未回覆者視為棄權，本公司不遞補名額。
+              <br />(六) 本公司將參加者的個人資料為利用之期間、方式、地區及對象：期間：i.參加者同意之期間內。ii.依相關法令所定或因執行業務所必須之保存期間或依個別契約就資料之保存所定之保存年限(以期限最長者為準)。地區：個人資料將用於臺、澎、金、馬地區。對象：富邦人壽保險股份有限公司及贈品發放方。方式：符合個人資料保護相關法令以自動化機器或其他非自動化之利用方式。
+              <br />(七) 參加本活動者可電洽本公司免費客服專線(0809-000-550)，針對其個人資料行使請求答覆查詢、提供閱覽、製給複製本、更正、補充、停止蒐集、處理、利用或刪除之權利，亦可至本公司官方網站法令公告之「<span
+                class="blue-text"
+                >個人資料保護告知聲明」</span
+              >」進一步瞭解詳細資訊。 <br />(八)
+              蒐集個人資料之類別：真實姓名、地址、電話等個人資料。
+            </li>
+            <li class="notification">
+              參加活動者必須遵守活動規範及其他有關規定，如未遵循者，本公司得拒絕其參與或取消其得獎資格，並對於任何破壞本活動行為保留相關權利。
+            </li>
+            <li class="notification">
+              本活動獎項屬於機會中獎，依中華民國所得稅法及各類所得扣繳率標準規定，機會中獎金額超過新台幣20,010元(含)者，得獎者需先行繳納10%機會中獎所得稅款(不足1元部分捨去)，非中華民國境內居住者，無論金額大小皆需先行繳納20%機會中獎所得稅款，詳細規定請參閱<span
+                class="blue-text"
+                >財政部稅務入口網</span
+              >。無論扣繳與否，均需列入活動得獎人當年度之個人機會中獎所得，並由本公司開立扣繳憑單予活動得獎人，活動得獎人需依規定填寫並繳交相關資料方可領獎。如不願意配合者，則視為自動放棄得獎資格。
+            </li>
+            <li class="notification">
+              本活動所提供之獎品以實物為主，不得折換現金、兌換其他商品或優惠，亦不得將本活動得獎資格轉讓或轉售予他人，本公司保有更換同值獎品之權利。獎品相關使用辦法請依照兌換內容說明為準。一旦活動得獎人領取獎品後，若有遺失或被竊，本公司不發給任何證明或補償。
+            </li>
+            <li class="notification">
+              本公司非獎品製造者或提供者，與各項獎品或服務之製造或提供廠商無任何代理或合夥關係，且本活動獎品之保固期限均依廠商出廠時實際提供者為準。得獎者如因本活動各項獎品、服務或保固發生任何爭議，概與本公司無關。
+            </li>
+            <li class="notification">
+              若活動得獎人未於時間內回覆得獎人資料或提供資料有誤，導致無法通知得獎或獎品無法寄送者，視同活動得獎人放棄權利並自負其責，本公司不另行通知。
+            </li>
+            <li class="notification">
+              本活動獎品之寄送地址僅限台灣地區(包括金門、馬祖、澎湖)，如獎品寄送地點為前述地區以外者，本公司得取消其得獎資格。
+            </li>
+            <li class="notification">
+              本活動如遇其他不可抗力之事由者，得順延之；本公司保有取消、終止、修改或暫停、審核民眾參加本活動資格及解釋本活動及獎品等細節之權利，其他相關事宜悉公布於「<span
+                class="blue-text"
+                >富邦人壽網路投保</span
+              >」活動網頁，並依其相關規定辦理。
+            </li>
+            <li class="notification">
+              本公司有權檢視得獎情況是否有人為操作之行為，對於以偽造、詐欺或其他不正當之方式意圖兌領之參加者，本公司有權撤銷其得獎資格或拒絕其參與本活動。
+            </li>
+            <li class="notification">
+              若各活動獎項遇停產、缺貨或其他無法排除之情事，將以其他等值商品替代，恕不另行公告。
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="content-3">
+        <div class="black-line"></div>
+        <div class="title-1">現在就加入Fun group放個鹿</div>
+        <div class="content-3-desc">免費下載，超乎你想像的社群互動！</div>
+        <div class="app-icon"></div>
+        <div class="btns-wrapper">
+          <div class="btn-wrapper">
+            <div class="white-button">
+              <img class="icon-app" src="img/ios_03/ios_03.png" />
+              <div class="app-icon-text">
+                <div class="small-text">Available on the</div>
+                App Store
               </div>
-              <div class="white-text">Version 1.5.0</div>
             </div>
-            <div class="btn-wrapper">
-              <div class="white-button">
-                <img class="icon-app" src="img/Image 4/Image 4.png" />
-                <div class="app-icon-text">
-                  <div class="small-text">GET IT ON</div>
-                  Google Play
-                </div>
+            <div class="white-text">Version 1.5.0</div>
+          </div>
+          <div class="btn-wrapper">
+            <div class="white-button">
+              <img class="icon-app" src="img/Image 4/Image 4.png" />
+              <div class="app-icon-text">
+                <div class="small-text">GET IT ON</div>
+                Google Play
               </div>
-              <div class="white-text">Version 1.0.7</div>
             </div>
+            <div class="white-text">Version 1.0.7</div>
           </div>
         </div>
       </div>
@@ -245,6 +329,12 @@
         </div>
       </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
     <script src="index.js"></script>
   </body>
